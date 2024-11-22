@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Njammala Koikode- Travel Spots</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f6f5f7;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navbar Styles */
+        nav {
+            background: #ff6e40;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff8a65;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #ff8a80, #ff9e80);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            clip-path: ellipse(150% 85% at 50% 0%);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        /* Content Styles */
+        .content {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        
+            border-radius: 15px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+            padding: 50px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .spot {
+            display: flex;
+            flex-wrap: wrap;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .spot:hover {
+            transform: scale(1.02);
+        }
+
+        .spot img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+
+        .spot-details {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .spot-details h3 {
+            font-size: 2rem;
+            color: #ff6e40;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .spot-details p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .spot-details a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 25px;
+            background-color: #ff6e40;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .spot-details a:hover {
+            background-color: #ff8a65;
+            transform: translateY(-3px);
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #f6f5f7;
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        footer .footer-section {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        footer h4 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #ff6e40;
+        }
+
+        footer p, footer ul, footer a {
+            font-size: 1rem;
+            color: #f6f5f7;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer a:hover {
+            color: #ff8a65;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0.5px;
+            
+            color: #f6f5f7;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #ff8a65;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Njammala Koikode</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="ticket.html">Tickets</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Discover Kozhikode</h1>
+        <p>Your Ultimate Guide to Stunning Travel Spots</p>
+    </header>
+
+    <!-- Content Section -->
+    <div class="content">
+        <!-- Travel Spots -->
+        <div class="spot">
+            <img src="KOZHIKODE.jpg" alt="Kozhikode Beach">
+            <div class="spot-details">
+                <h3>Kozhikode Beach</h3>
+                <p>Enjoy breathtaking sunsets, a long stretch of sandy shores, and vibrant local seafood at Kozhikode Beach.</p>
+                <a href="beach.html">Explore More</a>
+            </div>
+        </div>
+        <!-- Additional spots can be added here -->
+    </div>
+    <div class="content">
+        <!-- Travel Spots -->
+        <div class="spot">
+            <img src="thusha.jpeg" alt="Thusharagiri Waterfalls">
+            <div class="spot-details">
+                <h3>Thusharagiri Waterfalls</h3>
+                <p>Enjoy breathtaking sunsets, a long stretch of sandy shores, and vibrant local seafood at Kozhikode Beach.</p>
+                <a href="thushara.html">Explore More</a>
+            </div>
+        </div>
+        <!-- Additional spots can be added here -->
+    </div> 
+    <div class="content">
+        <!-- Travel Spots -->
+        <div class="spot">
+            <img src="kariyathumpara.jpg "alt="Kariyathumpara">
+            <div class="spot-details">
+                <h3>Kariyathumpara</h3>
+                <p>Enjoy breathtaking sunsets, a long stretch of sandy shores, and vibrant local seafood at Kozhikode Beach.</p>
+                <a href="kariyathumpara1.html">Explore More</a>
+            </div>
+        </div>
+        <!-- Additional spots can be added here -->
+    </div>
+    <div class="content">
+        <!-- Travel Spots -->
+        <div class="spot">
+            <img src="beypore.jpeg" alt="Beypore port">
+            <div class="spot-details">
+                <h3>Beypore port</h3>
+                <p>Discover the charm of Beypore Port, where history meets the sea! Explore vibrant traditions and trade at Kerala's coastal gem.</p>
+                <a href="beypore.html">Explore More</a>
+            </div>
+        </div>
+        <!-- Additional spots can be added here -->
+    </div> 
+    <div class="content">
+        <!-- Travel Spots -->
+        <div class="spot">
+            <img src="craft.jpeg" alt="Sargalaya craft village">
+            <div class="spot-details">
+                <h3>Sargalaya craft village</h3>
+                <p>Enjoy breathtaking sunsets, a long stretch of sandy shores, and vibrant local seafood at Kozhikode Beach.</p>
+                <a href="sargalaya.html">Explore More</a>
+            </div>
+        </div>
+        <!-- Additional spots can be added here -->
+    </div> 
+    <div class="content">
+        <!-- Travel Spots -->
+        <div class="spot">
+            <img src="museum.jpeg" alt="Pazhassiraja museum">
+            <div class="spot-details">
+                <h3>Pazhassiraja museum</h3>
+                <p>Enjoy breathtaking sunsets, a long stretch of sandy shores, and vibrant local seafood at Kozhikode Beach.</p>
+                <a href="pazhassiraja.html">Explore More</a>
+            </div>
+        </div>
+        <!-- Additional spots can be added here -->
+    </div> 
+    <div class="content">
+        <!-- Travel Spots -->
+        <div class="spot">
+            <img src="sarovaram.jpg" alt="Sarovaram biopark">
+            <div class="spot-details">
+                <h3>Sarovaram biopark  </h3>
+                <p>Enjoy breathtaking sunsets, a long stretch of sandy shores, and vibrant local seafood at Kozhikode Beach.</p>
+                <a href="sarovaram.html">Explore More</a>
+            </div>
+        </div>
+        <!-- Additional spots can be added here -->
+    </div> 
+    <div class="content">
+        <!-- Travel Spots -->
+        <div class="spot">
+            <img src="planetarium.jpg" alt="Planetarium">
+            <div class="spot-details">
+                <h3>Planetarium</h3>
+                <p>Enjoy breathtaking sunsets, a long stretch of sandy shores, and vibrant local seafood at Kozhikode Beach.</p>
+                <a href="planet.html">Explore More</a>
+            </div>
+        </div>
+        <!-- Additional spots can be added here -->
+    </div> 
+    <div class="content">
+        <!-- Travel Spots -->
+        <div class="spot">
+            <img src="light house.jpg" alt="Thikkodi light house">
+            <div class="spot-details">
+                <h3>Thikkodi light house</h3>
+                <p>Enjoy breathtaking sunsets, a long stretch of sandy shores, and vibrant local seafood at Kozhikode Beach.</p>
+                <a href="thikkodi.html">Explore More</a>
+            </div>
+        </div>
+        <!-- Additional spots can be added here -->
+    </div> 
+    <div class="content">
+        <!-- Travel Spots -->
+        <div class="spot">
+            <img src="dam.jpeg" alt="Peruvannamuzhi dam">
+            <div class="spot-details">
+                <h3>Peruvannamuzhi dam</h3>
+                <p>Enjoy breathtaking sunsets, a long stretch of sandy shores, and vibrant local seafood at Kozhikode Beach.</p>
+                <a href="peruvanna.html">Explore More</a>
+            </div>
+        </div>
+        <!-- Additional spots can be added here -->
+    </div> 
+   
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: contact@njammalakoikode.com</p>
+            <p>Phone: +91 9876543210</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Ticket</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><span>&#x1F426;</span> Twitter</a>
+                <a href="#"><span>&#x1F30D;</span> Instagram</a>
+                <a href="#"><span>&#x1F4F7;</span> Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Kozhikode - Featured Spot</title>
+    <style>
+     
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f6f5f7;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+       
+        nav {
+            background: #ff6e40;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff8a65;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #ff8a80, #ff9e80);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            clip-path: ellipse(150% 85% at 50% 0%);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        /* Featured Image Section */
+        .featured-section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .featured-image {
+            size: 1000px;
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .featured-image:hover {
+            transform: scale(1.02);
+        }
+
+        .description {
+            margin-top: 30px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .description h3 {
+            font-size: 2.5rem;
+            color: #ff6e40;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .description p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #f6f5f7;
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        footer .footer-section {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        footer h4 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #ff6e40;
+        }
+
+        footer p, footer ul, footer a {
+            font-size: 1rem;
+            color: #f6f5f7;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer a:hover {
+            color: #ff8a65;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 5px;
+            color: #f6f5f7;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #ff8a65;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">NAMMALA KOIKODE</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Featured Travel Spot</h1>
+        <p>Highlighting the Beauty of Kozhikode's Finest Destinations</p>
+    </header>
+
+    <!-- Featured Image Section -->
+    <div class="featured-section">
+        <img src="sarga.jpg" alt="Featured Kozhikode Spot" class="featured-image">
+        <div class="description">
+            <h3>Sargalaya Craft Village</h3>
+            <p>Sargaalaya Craft Village in Iringal, Kozhikode, is a vibrant destination celebrating Kerala's rich artisan heritage. Nestled by serene backwaters, it features live craft demonstrations and workshops in pottery, weaving, and more. Visitors can shop for unique handcrafted items while immersing themselves in the art and culture of the region</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: contact@kozhikodeexplorer.com</p>
+            <p>Phone: +91 9876543210</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><span>&#x1F426;</span> Twitter</a>
+                <a href="#"><span>&#x1F30D;</span> Instagram</a>
+                <a href="#"><span>&#x1F4F7;</span> Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
